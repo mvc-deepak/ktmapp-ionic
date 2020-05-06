@@ -11,7 +11,7 @@ import { darkStyle } from './map-dark-style';
   styleUrls: ['./map.scss']
 })
 export class MapPage implements AfterViewInit {
-  @ViewChild('mapCanvas', { static: true }) mapElement: ElementRef;
+  @ViewChild('mapCanvas') mapElement: ElementRef;
 
   constructor(
     @Inject(DOCUMENT) private doc: Document,
